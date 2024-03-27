@@ -1,0 +1,26 @@
+############################
+# Stage 1: base
+FROM node:10-alpine as base
+
+RUN apk update && apk add --no-cache \
+    autoconf \
+    automake \
+    nasm \
+    bash \
+    g++ \
+    gcc \
+    make \
+    musl-dev \
+    libc6-compat \
+    libjpeg-turbo-dev \
+    libpng-dev
+
+############################
+# Stage 2: release
+FROM base as release
+
+WORKDIR /app
+
+COPY . .
+
+EXPOSE 8888

@@ -1,0 +1,586 @@
+{
+  "layout": {
+    "loan-tracker": "Track your application",
+    "login": "Login",
+    "logout": "Logout",
+    "apply": "Apply",
+    "products": "Products",
+    "loan-information": "Loan Information",
+    "company-information": "Company Information",
+    "legal": "Legal",
+    "personal-loan": "Personal Loan",
+    "balance-transfer": "Card Debt Consolidation Loan",
+    "bt-calculator": "BT Calculator",
+    "no-doc-loan": "No Document Loan",
+    "property-owner-loan": "Property Owner Loan",
+    "apple-subscribe-plus": "Subscribe+ for Apple Products",
+    "card-debt-tips": "Card Debt Tips",
+    "payment-methods": "Payment Methods",
+    "faqs": "FAQs",
+    "ai-blog": "A.I. Blog",
+    "about-us": "About Us",
+    "quotes": "Quotes",
+    "careers": "Careers",
+    "contact-us": "Contact Us",
+    "important-notice": "Important Notice",
+    "money-lenders-ordinance": "Money Lenders Ordinance",
+    "privacy-policy": "Privacy Policy and Personal Information Collection Statement",
+    "license": "Money Lender's License: {{moneyLenderLicense}}",
+    "contact-email": "The information displayed on this website is for reference only and updated from time to time as a result of frequent reviews by WELEND LIMITED. For more information on our operations, please contact us directly at <a href='mailto:{{customerServiceEmail}}' >{{customerServiceEmail}}</a>",
+    "address": "Unit 05-12, Level 22, K11 ATELIER King’s Road, 728 King’s Road, Quarry Bay, Hong Kong",
+    "copyright": "© {{year}} WELEND LIMITED. All rights reserved.",
+    "warning": "Warning: You have to repay your loans. Don’t pay any intermediaries.",
+    "customer-service": "Customer Service/ Complaint Hotline： {{customerServiceHotline}}",
+    "opening-hours": "(Monday to Friday, 9am-8pm)",
+    "get-your-real-rate": "Clear your debt now",
+    "apply-now": "Apply Now",
+    "welend-reserves": "WELEND LIMITED reserves its absolute right on any loan approval decision and any disputes.",
+    "prevail-version": "In the event of any inconsistencies between the English and Chinese version of the Terms and Conditions, the English version shall prevail."
+  },
+  "home": {
+    "more-reliable": "A.I. Card Debt Master",
+    "more-instant": "the best repayment plan",
+    "lead-in1": "A.I. Precision",
+    "lead-in1-details": "<p>Tailor-made quotation, accurate approval<sup>#</sup>.<br><br>Preparing accurate quotation to you in 1 second**,<br>WeLend enables you to receive a personalized<br>personal loan plan.</p>",
+    "lead-in2": "A.I. Simplicity",
+    "lead-in2-details": "<p>Income Proof & Address Proof waiver<sup>*</sup><p/>Fully automated, A.I. helps simplify loan process. <br/>Complete application in 2 steps with your bank<br/>account information and HKID. No manual price <br/>mark-up and fair quotation in 1 second**. Cash <br/>delivery as fast as 21 mins from  the time submitting<br/>the application.",
+    "lead-in3": "A.I. Speed",
+    "lead-in3-details": "<p>No manual input<sup>#</sup>. Instant approval upon<br>confirmation, immediate cash delivery<sup>^^</sup>.</p><p>Interest rate is calculated by A.I. fully automatedly.<br>Fully online loan*** powered by WeLend allows you<br>to solve your difficulties ahead with a reasonable<br>instalment plan.",
+    "lead-in4": "A.I. Solutions",
+    "lead-in4-details": "<p>A.I. chatbot provides immediate solutions 24/7<sup>^</sup>.<br><br>Confused about interest rate calculations? Want to<br>know more about the instalment options? Applying for<br>a loan is easier than you imagine when A.I. chatbot is<br>here to solve your difficulties 24/7.</p>",
+    "more-reliable-more-instant": "Experience the seamless",
+    "that-a-weLend-ai-loan": "automated loan process of<br/> A.I. loan<sup>#</sup>",
+    "remark-1": [
+      "# The customer must fulfil specific credit requirements to be eligible. Actual time may vary depending on each individual case.",
+      "* Income Proof and Address Proof waiver only available for loans with the maximum loan amount of HK$300,000 and for customers who fulfil specific credit requirements. WELEND LIMITED reserves the right to request further supporting documents for loan approval purposes in certain circumstances. Larger loan amounts may be offered to customers who provide supporting documents. HKID copy and disbursement account proof are required from all new customers for identity verification and loan disbursement purposes.",
+      "** Only refers to the time needed to calculate quotations after receipt of the applicant's TU Report. Applicants must fulfil specific requirements to be eligible, actual time may vary depending on each individual case.",
+      "^^ The loan will be transferred via Faster Payment System (FPS) after the loan is approved and the loan agreement is signed. Actual transfer time is subject to each individual bank's transfer service hours.",
+      "***Fully online loan refers to the loan process is handled by A.I. online. Interest rate is calculated based on A.I. big data. The customer must fulfil specific credit requirements to be eligible, final approval result may vary depending on each individual case.",
+      "^ \"A.I. chatbot provides immediate solutions 24/7\" only refers to WeLend Chatbot automatically replying enquiries on loan process 24/7. The actual situation might be different based on particular problems and situations."
+    ],
+    "banner-text": "Learn More >",
+    "bottom-banner-text-1": "Experience the seamless",
+    "bottom-banner-text-2": "<span>automated loan process&nbsp;</span><span>of A.I. loan<sup>#</sup></span>",
+    "bottom-banner-button-text": "Apply Now"
+  },
+  "personal-loan": {
+    "title": "Personal Loan",
+    "mobile-title": "",
+    "sub-title": [],
+    "description": "No manual price mark-up,<br/>Fair quotation in 1 second<sup>**</sup>!<br/>Digitalized, no-bias and fully automated,<br/>simplifying every step of the process<sup>#</sup>,<br/>Income Proof & Address Proof waiver<sup>*</sup> with instant approval,<br/>Same day cash delivery upon application<sup>^^</sup>!",
+    "lower-title": "Infinite A.I. seamless experience",
+    "lower-description": "Leading FinTech with speed",
+    "feature-1-title": "<h>&#9420; A.I. Simplicity</h>",
+    "feature-1-description": "<p>Income Proof & Address Proof waiver<sup>*</sup>, simplified application.</p><p>Fully automated loans. A.I. facilitates the loan application process by waiving income and address proof*. Simply prepare your bank account number and HKID and your loan application can be completed in 2 simple steps! No manual input, fair quotation in 1 second**, get your loan in as quick as 21 minutes with instant cash delivery<sup>^^</sup>!</p>",
+    "feature-2-title": "<h>&#9420; A.I. Speed</h>",
+    "feature-2-description": "<p>No manual input<sup>#</sup>, automated processing. Instant approval. Instant cash delivery<sup>^^</sup>.</p><p>Online applications are processed instantly with A.I. personalized interest rate calculation. Same day loan application, same day cash delivery. A.I. can help manage your money and debts!</p>",
+    "feature-3-title": "<h>&#9420; A.I. Precision</h>",
+    "feature-3-description": "<p>Tailor-made quotation, accurate approval<sup>#</sup>.</p><p>A.I. Personal Loan offers a fair quotation with personalized interest rates and instant cash delivery<sup>^^</sup>.</p>",
+    "feature-4-title": "<h>&#9420; A.I. Solutions</h>",
+    "feature-4-description": "<p>A.I. chatbot provides immediate solutions 24/7.</p><p>What is my annual interest rate? What is the minimum interest amount? A.I. Chatbot is on standby 24/7, answering all your questions so your can complete your loan application easily and receive your cash instantly<sup>^^</sup>!</p>",
+    "feature-tnc": [
+      "# The customer must fulfil specific credit requirements to be eligible. Actual time may vary depending on each individual case.",
+      "* Income Proof and Address Proof waiver only available for loans with the maximum loan amount of HK$300,000 and for customers who fulfil specific credit requirements. WELEND LIMITED reserves the right to request further supporting documents for loan approval purposes in certain circumstances. Larger loan amounts may be offered to customers who provide supporting documents. HKID copy and disbursement account proof are required from all new customers for identity verification and loan disbursement purposes.",
+      "** Only refers to the time needed to calculate quotations after receipt of the applicant's TU Report. Applicants must fulfil specific requirements to be eligible, actual time may vary depending on each individual case.",
+      "^^ The loan will be transferred via Faster Payment System (FPS) after the loan is approved and the loan agreement is signed. Actual transfer time is subject to each individual bank's transfer service hours."
+    ],
+    "step-1": "Apply online and get your rate instantly^",
+    "step-2": "A.I. technology instantly verifies documents you submit online",
+    "step-3": "Confirm loan agreement online",
+    "step-4": "Make online transfers instantly^^"
+  },
+  "about-us": {
+    "title": "Infinite A.I.  seamless experience",
+    "sub-title": "",
+    "description": "WeLend is the largest purely online lending platform in Hong Kong, combining technology and A.I. solutions. Founded in 2013 by an experienced team of financial and technology experts, WeLend leverages on A.I. and big data analytics to provide an innovative online lending experience.<br/><br/>WeLend is a pioneer in Hong Kong’s FinTech industry, and it is our philosophy to ‘revolutionize traditional lending service’. Through innovation, WeLend A.I. offers a humanized, tailor-made and simplified loan application process, delivering a seamless lending service to our customers in a matter of seconds.",
+    "feature-1-title": "Ground Breaking Spirit",
+    "feature-1-description": "“The definition of insanity is doing the same thing over again and expecting a different result” once said by the famous Einstein. WeLend shares that same passion, adopting technology to revolutionize the traditional lending services, constantly breaking the conventions, strive to improve our customer’s lending experiences.",
+    "feature-2-title": "Data Risk Management",
+    "feature-2-description": "WeLend’s original WeDefend, with the breakthrough use of technology to real time analyse big data, automatically assess the degree of risk, allowing us to quote instantly online, with the perfect balance of stable risk management, and speedy approval.",
+    "feature-3-title": "Safe CyberSecurity",
+    "feature-3-description": "The importance of cyber security is unquestionable. WeLend has comprehensive system security and monitoring measures, coupled with rigorous identity authentication procedures and privacy policies, to ensure customer privacy is well protected.",
+    "section-1-title": "Backed by the world’s most renowned investors",
+    "section-1-description": "WeLab is backed by the most renowned investors including Allianz, China Construction Bank International, International Finance Corporation (a member of the World Bank Group), Malaysian sovereign wealth fund Khazanah Nasional Berhad, CK Hutchison’s TOM Group, and Sequoia Capital.",
+    "section-2-title": "WeLab Group Milestones",
+    "timeline-1-time": "Jan 2013",
+    "timeline-1": "WeLab was founded.",
+    "timeline-2-time": "Jul 2013",
+    "timeline-2": "WeLab launched WeLend – Hong Kong’s first online lending platform.",
+    "timeline-3-time": "Aug 2014",
+    "timeline-3": "WeLab expanded into Mainland China with Wolaidai (我来贷), which is now one of the largest mobile lending platforms in the market.",
+    "timeline-4-time": "Jan 2015",
+    "timeline-4": "WeLab raised US$20 million in its Series A fundraising round.",
+    "timeline-5-time": "Jan 2016",
+    "timeline-5": "WeLab raised US$160 million in its Series B fundraising.",
+    "timeline-6-time": "Nov 2017",
+    "timeline-6": "WeLab raised US$220 million in its strategic financing.",
+    "timeline-7-time": "Sep 2018",
+    "timeline-7": "WeLab expanded into Indonesia with a fintech joint venture AWDA.",
+    "timeline-8-time": "Sep 2018",
+    "timeline-8": "WeLab formed strategic collaboration with CK Hutchison.",
+    "timeline-9-time": "Oct 2018",
+    "timeline-9": "WeLab was named in a KPMG sponsored report as one of the top 100 fintech companies in the world – #7 in China and #23 globally.",
+    "timeline-10-time": "Apr 2019",
+    "timeline-10": "WeLab was granted a virtual banking license by the Hong Kong Monetary Authority",
+    "timeline-11-time": "Dec 2019",
+    "timeline-11": "WeLab successfully completed US$156m in Series C strategic financing",
+    "timeline-12-time": "Jul 2020",
+    "timeline-12": "WeLab Bank officially launched",
+    "timeline-13-time": "Sep 2021",
+    "timeline-13": "WeLab Pay officially launched",
+    "section-3-title": "Our Team",
+    "section-3-description": "We are a band of experienced finance and technology professionals looking to transform the consumer finance industry. We are a focused and fearless group of people who are serious about delivering the best financial products our customers have ever used.",
+    "learn-more": "Learn more",
+    "welab-pay-learn-more": "Learn more",
+    "welab-pay-learn-more-link": "https://subscribe-plus-for-apple-products.welend.hk/en/",
+    "weLab-bank-learn-more-link": "https://www.welab.bank/en/",
+    "welab-bank-learn-more": "Learn more",
+    "join-us": "Join Us",
+    "slide-title-problem": "Traditional Lending Service",
+    "slide-title-solve": "A.I. Solutions",
+    "section-4-title": "We",
+    "section-5-title": "Lend A.I. Lending Experience",
+    "slide-1-problem": "Many money lenders have manual loan approvals. Procedures from application to transaction usually takes long processing time.",
+    "slide-2-problem": "As well as offering online services, many money lenders also rent physical branches  which may lead to an increase in operational expenditure.",
+    "slide-3-problem": "With so many choices of online financial institutions in the market, it is difficult for customers with financial troubles to make the right choice for themselves.",
+    "slide-1-solve": "Leverages on A.I. and big data analytics to simplify the loan application process with speedy approval.",
+    "slide-2-solve": "Solely online, no branches. Low cost and high efficiency operating model allows our customers to enjoy the full benefit of a simplified and expeditious loan application process and reduced loan interest expenses.",
+    "slide-3-solve": "WeLend comprises of an elite league professionals from finance, technology and consumer products sectors, also backed by the most renowned investors. WeLend upholds the idea to revolutionize the traditional loan process, offering a professional and unique online solution to your financial need. ",
+    "feature-tnc": [
+      ""
+    ]
+  },
+  "ploan-calculator": {
+    "loan-calculator": "Loan Calculator",
+    "loan-amount": "Loan Amount",
+    "tenor": "Tenor",
+    "monthly-repayment": "Monthly Repayment",
+    "tnc1": "1. Loan amount should fall within $5,000 and $800,000.",
+    "tnc2": "2. Monthly repayment is calculated using an effective rate of 1.99% - 25.00% and is for reference only.",
+    "month": "Months",
+    "note": "note"
+  },
+  "balance-transfer-calculator": {
+    "loan-calculator": "Card Debt Consolidation Loan Calculator",
+    "loan-amount": "Outstanding Credit Card Debt",
+    "credit-card": "Credit Card",
+    "bt-loan": "Card Debt Consolidation Loan",
+    "repayment": "Monthly Repayment",
+    "interest": "Total Interest",
+    "tenor": "Tenor",
+    "year": " Yrs",
+    "month": " Mos",
+    "note": "Note",
+    "note-1": "Note: The above Min Pay result is based on a 36.47% effective rate (a common effective rate set by general credit card cash advances) and a minimum repayment of 4%. Monthly repayment refers to the first repayment month for illustrative purposes only.",
+    "note-2": "The above WeLend Credit Card Debt Consolidation Loan result is calculated based on an annual effective rate of 8.35% and is rounded to the nearest dollar. The result is for reference purposes only. The final interest rate varies according to the customer’s credit record. WELEND LIMITED reserves its absolute right on the final loan approval decision.",
+    "note-3": "Loan amount should fall within $5,000 and $800,000."
+  },
+  "contact-us": {
+    "title": "Contact Us",
+    "description": "Reach us in the following ways",
+    "hotline": "Hotline",
+    "hotline-content": "Service Time: <br />Monday to Friday, 9am-8pm",
+    "email": "Email",
+    "whatsapp": "WhatsApp",
+    "whatsapp-link": "https://wa.me/85237069120?text=Hi!",
+    "line": "Line",
+    "wechat": "WeChat",
+    "career": "Job Enquiries",
+    "press-enquiries": "Press & Other Enquiries"
+  },
+  "payment-methods": {
+    "title": "Payment methods",
+    "description": "WeLend offers the following payment methods",
+    "pps-title": "PPS *",
+    "pps-description": "Register the payment bill by calling PPS Hotline “18013” with a touch-tone phone or online at <a href='http://www.ppshk.com' target='_blank' >http://www.ppshk.com</a>. The merchant code of WeLend is “6338”.<br/><br/>Payment can then be made by calling “18033” with a touch-tone phone, mobile PPS application or online at <a href='http://www.ppshk.com' target='_blank' >http://www.ppshk.com</a>. You can select “1” for Monthly Repayment or “2” for Early Settlement, then print the receipt after transaction is completed for record. Please note that the daily transaction count limit of each bill is 3.<br/><br/>Please input your 8-digit member ID number (you can login WeLend to get your member ID) during bill registration.<br/><br/>For enquiries regarding PPS service, please call 900 00 222 328.",
+    "jetco-title": "JETCO ATMs – JET PAYMENT Service *",
+    "jetco-description": "Payment can be made by “JET PAYMENT” through JETCO ATMs.<br/><br/>The merchant code of WeLend is “9062” and bill type is “01”.<br/><br/>Please input your 8-digit member ID (you can login WeLend to get your member ID) during payment, then print the receipt after transaction is completed for record.<br/><br/>For enquiries regarding JETCO service, please call 2520 1747.",
+    "autopay-title": "Autopay",
+    "autopay-description": "Login to your account to download, sign and send us the Direct Debit Authorisation Form, our Company will arrange the repayment through autopay from your designated bank account directly on the due date.",
+    "seven-eleven-title": "7-11 *",
+    "seven-eleven-description": "Show your QR code (sent and activated via monthly payment reminder SMS) and visit any 7-11 store in Hong Kong to pay your monthly payment through cash. The maximum amount for each payment is HK$5,000. For payments exceeding HK$5,000, payment will be split into two or more transactions by 7-ELEVEN staff.<br/><br/>Upon completion of payment, all receipts should be retained as proof of payment.",
+    "remark": "* Generally, it takes 1 to 2 working days to process these payments in our system"
+  },
+  "card-tips": {
+    "title": "Card Debt Tips",
+    "description": "Interest expenses from card debts not only roll into to larger and larger amounts, but will also affect your credit score!",
+    "section-1-title": "Hidden Terms on Card Debt",
+    "section-1-description": "Credit card spending is increasingly convenient these days, with perks like cash rebates and mileage points making it even more attractive. However, many people also agree that these benefits may lead to overspending, and coupled with hidden terms, may result in unaffordable levels of financial burden. Here are 4 hidden terms on card debt:",
+    "term-1-title": "Hidden Term 1",
+    "term-1-description": "A lot of people prefer to repay their card debt with minimum repayment amount only, but neglect the fact that this amount bears compounding interest. This can amount to interest rates as high as APR 36% and an accumulation of even more card debt over time! For example, a $20K card debt could charge up to $117,832 of interest over 5 years!",
+    "term-2-title": "Hidden Term 2",
+    "term-2-description": "Due to its compounding nature, monthly interest expenses can roll over and accumulate into larger card debt overtime if only the minimum repayment amount is settled! For example, a $20K card debt can incur an interest expense charge of $49,550,  which is even higher than the principal loan amount!",
+    "term-3-title": "Hidden Term 3",
+    "term-3-description": "As long as your current outstanding card debts are not fully paid, interest is charged on your current outstanding amount as well as any new spending.",
+    "term-4-title": "Hidden Term 4",
+    "term-4-description": "Many people prefer repaying by interest-free-hire-purchase programmes instead of full upfront product payment, but these programmes may not be interest free all the time! Interest may be charged if there are any outstanding amounts on your card. Apart from hire purchase, insurance payment and Octopus card auto top-up can also charge interest too – even your transportation expenses are interest-charging!",
+    "section-2-title": "Ways to Revive your credit score",
+    "section-2-description": "Over-due card debts not only tumble your interest expenses but also impacts your credit score. What should you do? Let us share ways to revive your credit score.",
+    "solution-1-title": "Approach 1",
+    "solution-1-description": "Should you use up the entire limit on all of your credit cards? Actually, you shouldn’t spend more than 70% of your card limit,  as this would reduce your credit score.",
+    "solution-2-title": "Approach 2",
+    "solution-2-description": "Prolonging your credit card debt payment, does not just incur interest expenses, creating doubt in your repayment ability but also impact your credit score. Best thing to do is to settle all your credit card debt each month.",
+    "solution-3-title": "Approach 3",
+    "solution-3-description": "Your repayment record is one of the key factors in impacting your credit score. It does not just reflect your financial management ways. Regardless of how punctual your regular repayment schedule is, only 1 day late in repayment, can corrupt your credit score. Therefore when it comes to credit card repayment, 1 day late is too late.",
+    "solution-4-title": "Approach 4",
+    "solution-4-description": "Concurrent multiple applications of credit cards will result simultaneous credit score checking by numerous card-issuing bank. This will create an image of desperate need of credit limit, which may wreak your credit score. So avoid applying too many credit cards collectively.",
+    "action-1": "Avoid these hidden terms and calculate now to see how much interest that you need to pay",
+    "action-2": "Improve your credit score with clearing all your credit card debt first!"
+  },
+  "balance-transfer": {
+    "title": "Card Debt Consolidation Loan",
+    "description": "A.I. can solve your problem automatically!<br />Consolidate debt in 1 second<sup>^</sup> to save interest. <br />Boost your credit score in just one step!<br /><br />-    <b>Interest-Saving</b>: up to 90%<sup>#</sup>!<br />-   <b>Large Loan Amount</b>: up to 24x monthly salary<sup>#</sup>!<br />-    <b>Tailor-made Plans</b>: choose from 3 tailor-made plans, <br />boost your credit score in just one step!",
+    "lowerTitle": "Infinite A.I. seamless experience",
+    "lowerDescription": "Leading FinTech with speed",
+    "feature-1-title": "<h>&#9420; A.I. Save Interest</h>",
+    "feature-1-description": "A.I. Card Debt Master instantly analyses and consolidates debt in 1 second<sup>^</sup> with up to 90% interest-savings <sup>#</sup>! With a loan amount of up to 24x your monthly salary, you have maximum flexibility on your financial management<sup>#</sup>.",
+    "feature-2-title": "<h>&#9420; A.I. Tailor-made Plans</h>",
+    "feature-2-description": "A.I. calculates your financial condition with big data* and instantly designs 3 tailor-made plans for you<sup>^</sup>. A.I. can help you on interest savings, time savings and monthly instalment amount savings. You can gain full control of your finances and improve your TU scores afterwards!",
+    "feature-3-title": "<h>&#9420; A.I. Instant Score Boost</h>",
+    "feature-3-description": "A.I. Card Debt Master forms a customized plan, helping you settle all outstanding debts in phases. You can track the payments online and clear your debts with flexibility. Boost your credit score in one step!",
+    "feature-tnc": [
+      "* The customer must fulfil specific requirements to be eligible, actual situation may vary depending on each individual case.",
+      "^ Only refers to the time needed to calculate quotations after the applicant received his/her TU Report, actual time may vary depending on each individual case.",
+      "# “Up to 90% interest savings” and “24x loan amount of monthly salary” only applies to customers with designated loans and who fulfill specific requirements. 90% interest savings is calculated using annual percentage rate 36% with minimum monthly payment 1%"
+    ],
+    "waiver-remark": "",
+    "video-title-1": "A.I. Card Debt Master",
+    "video-title-2": "Clear Your Debt & Revitalise Your Credit Score",
+    "slide-title-problem": "Credit Card Debts",
+    "slide-title-solve": "Solutions",
+    "slide-1-problem": "Credit card interest rates can be as high as 36%. If you only repay the MinPay amount, your debt could be compounded and the total interest due can be very significant!",
+    "slide-1-solve": "A.I. Card Debt Consolidation Loan can consolidate your credit card debts in one go with affordable pricing. At WeLend, your interest rate could be as low as 1.88%. Try out the calculator now, see how much you can save!",
+    "slide-1-feature": "interest",
+    "slide-2-problem": "Compound interest can create a heavy burden when repaying your debts, especially if the monthly repayments are a large portion of your income. Only repaying the MinPay amount will affect your credit score!",
+    "slide-2-solve": "If you want to clear all your credit card debts in one go, you should try WeLend's A.I. Card Debt Consolidation Loan which combines your debt into a single account. A.I. calculates a reasonable minimum repayment amount and helps you improve your credit score. Check out all the plans now!",
+    "slide-2-feature": "repayment",
+    "slide-3-problem": "If you only repay the MinPay amount, it is difficult to settle your debts quickly and could take as long as 20 years to repay.",
+    "slide-3-solve": "If you only repay the MinPay amount, you may need to pay more than you planned. Using WeLend's A.I. Card Debt Consolidation Loan, you can combine your debts into one account and clear your debts in one go. This can shorten the repayment period and improve credit scores quickly. Check out how much time it takes to settle all the debts!",
+    "slide-3-feature": "repayment time",
+    "slide-4-problem": "Balance transfer loans generally rely on a manual loan approval process and could take a week to approve.",
+    "slide-4-solve": "A.I. Card Debt Consolidation Loan can offer you a fair quotation in 1 second^*. Make reasonable monthly repayments and improve your credit score!  Check out how much you can save by applying the loan!",
+    "slide-4-feature": "approval time",
+    "slide-5-problem": "Traditional financial institutions typically have a manual approval process and it is often not clear how to repay all your debts.",
+    "slide-5-solve": "A.I. fully automated calculation*, takes advantage of big data to offer a personalized repayment plan in 1 second^, a fair quotation without human judgement! Apply now and let WeLend A.I. tailor a plan for you so you can clear all your debts!",
+    "slide-5-feature": "the most",
+    "save": "SAVE"
+  },
+  "no-doc-loan": {
+    "title": "No-Doc Loan",
+    "description": "A.I. identity verification, no additional documents*.<br/>Instant application and approval. Prompt disbursement^^!",
+    "lowerTitle": "Infinite A.I. seamless experience",
+    "lowerDescription": "Leading FinTech with speed",
+    "feature-1-title": "<h>&#9420; A.I. Convenience | Documents waived. Instant approval^^.</h>",
+    "feature-1-description": "Income and Address Proof? Find No More, Submit No More and Process No More!<sup>*</sup>",
+    "feature-2-title": "<h>&#9420; A.I. Seamlessness | Real time auto-assessment</h>",
+    "feature-2-description": "Click and get your rate online instantly<sup>#</sup>! A.I. handles all your enquires 24/7.",
+    "feature-3-title": "<h>&#9420; A.I. Speed | Instant deposit via FPS</h>",
+    "feature-3-description": "Deposit will be made instantly via Faster Payment System (FPS) once contract is confirmed and documents are verified online<sup>^^</sup>.",
+    "feature-tnc": [
+      "* Only applicable to customers who fulfil specific credit requirements with a maximum loan amount of HK${{max}}. Larger loan amounts may be offered to customers who provide further supporting documents. An HKID copy and disbursement account proof are required from new customers for identify verification and disbursement purposes.",
+      "^^ The loan will be transferred via Faster Payment System (FPS) after the loan agreement is signed and the loan is approved. Actual transfer time is subject to each individual bank's transfer service hours.",
+      "# Only refers to the time needed to calculate quotations after receipt of the applicant's TU Report. Applicants must fulfil specific requirements to be eligible, actual time may vary depending on each individual case."
+    ],
+    "section-1-title": "Approval Triology",
+    "section-2-left-title-1": "",
+    "section-2-left-title-2":"Traditional Financial Institutions",
+    "section-2-right-title-we": "We",
+    "section-2-right-title-land": "Lend",
+    "section-2-right-title": " No-Doc Loan",
+
+    "timeline-1": "Fill application form",
+    "timeline-2": "Submit application and documents for manual approval",
+    "timeline-3": "Wait for approval result",
+    "timeline-4": "Submit true copies of documents at branch",
+    "timeline-5": "Sign agreement at branch",
+    "timeline-6": "Arrange for disbursement",
+
+    "timeline2-1": "Apply online with Instant Rates<sup>#</sup>",
+    "timeline2-1-small": "(Income and Address Proof Waived<sup>*</sup>)",
+    "timeline2-img-desc": "Documents waived",
+    "timeline2-2": "Confirm loan agreement online",
+    "timeline2-3": "Instant disbursement via Faster Payment System (FPS)",
+    "welend-reserves": "WELEND LIMITED reserves its absolute rights on the final loan decision and on any disputes."
+  },
+  "property-owner-loan": {
+    "title": "Property Owner Loan",
+    "description": "A.I. seamless loan approval process,<br/>larger loan amount than conventional personal loans,<br/>no property deeds or legal fees,<br/>approved in as quick as 30 minutes*,<br/>forget about waiting!",
+    "lowerTitle": "Infinite A.I. seamless experience",
+    "lowerDescription": "Leading FinTech with speed",
+    "feature-1-title": "<h>&#9420; A.I. Speed Approval in as quick as 30 minutes<sup>*</sup></h>",
+    "feature-1-description": "A.I. property owner loan can be processed within 24 hours. Get your quotation in 1 second<sup>^</sup>, instant approval, instant cash delivery<sup>#</sup>.",
+    "feature-2-title": "<h>&#9420; A.I. Quotation. Larger Loan Amount</h>",
+    "feature-2-description": "Subject to the value of your property and your credit score, A.I. Property Owner Loan can offer a larger loan size. Loan amount can be higher than conventional personal loans, meeting all your financial needs!",
+    "feature-3-title": "<h>&#9420; A.I. Flexibility</h>",
+    "feature-3-description": "Joint ownership on a property yet sole property loan applicant, saving complicated procedures and expediting your approval process. A.I. can process your application instantly with same day cash delivery<sup>#</sup>!",
+    "feature-4-title": "<h>&#9420; A.I. Simplicity  Deed Waiver</h>",
+    "feature-4-description": "Property deeds and Land Registry registration are not required, avoiding complicated legal procedures. Get you quotation in 1 second<sup>^</sup>!",
+    "feature-5-title": "<h>&#9420; A.I. Savings Legal Fees Waived</h>",
+    "feature-5-description": "No legal fees are required, avoiding extra expenses. Enjoy the low interest rate and large loan size A.I. Property Owner Loan!",
+    "feature-6-title": "<h>&#9420; A.I. Flexibility Self-Occupancy or Leased</h>",
+    "feature-6-description": "No matter if your property is a private estate, apartment or public housing or if it is self-occupied or leased; as long as you are the owner of the property, you are eligible to apply!",
+    "waiver-remark": "",
+    "remark-1": "*Based on the submission date of all related information regarding application and property, and only applicable from 10am - 3pm on Monday - Friday (excluding public holidays). Final approval is subject to the submission of all relevant documents and credit record of the applicant. Approval time may vary based on individual circumstances.",
+    "welend-reserves": "WELEND LIMITED reserves its absolute right on the final loan decision.",
+    "remark-2": "^ Only refers to the time needed to calculate quotations after receipt of the applicant's TU Report. Applicants must fulfil specific requirements to be eligible, actual time may vary depending on each individual case.",
+    "remark-3": "# The loan will be transferred via Faster Payment System (FPS) after the loan is approved and the loan agreement is signed. Actual transfer time is subject to each individual bank's transfer service hours.",
+    "apply": "Apply"
+  },
+  "products": {
+    "title": "FAQ",
+    "personal-loan-data": {
+      "who-is-eligible-question": "What are the application requirements for WeLend loan?",
+      "who-is-eligible-answer": "<div>All loan applicants must be a Hong Kong resident aged 18 years or above<sup>*</sup> and meet the following requirements:<ul><li>Stable employment: Minimum employment at current job of 3 months</li><li>Repayment Ability: Minimum monthly income of HK$8,000</li></ul>Submit the following documents during the application process:<ul><li>HKID Copy</li><li>Disbursement account proof (for the purposes of account verification, you can provide monthly bank statement)</li></ul>Additional documentation if necessary:<ul><li>Commission Based Salary: Minimum recent 3 months of Income Proof</li><li>Real Estate Industry: Minimum recent 6 months of Income Proof</li><li>Residential address proof</li></ul><div class=\"text-left text-size-small\"><sup>*</sup>if you are Chinese citizen, please may consider using Wolaidai, tailor made for mainland customers. For more details, please visit <a href=\"https://m.wolaidai.com\">https://m.wolaidai.com</a></div></div>",
+      "loan-amount-and-tenor-question": "How much can be borrowed? For how long?",
+      "loan-amount-and-tenor-answer": "<div> WeLend provides loan amounts from HK$5,000 to HK$1,500,000. Tailor made repayment schedule is available, ranging from 3 to 72 months. Maximum loan amount is determined by your financial background, including credit score, monthly income, occupation and financial situation.</div>",
+      "approval-process-question": "What is the Application Process?",
+      "approval-process-answer": "<div>Application process can be as simple as:<ol><li>Apply online</li><li>Finish mobile verification</li><li>Upload documents</li><li>Receive instant approval<sup>^</sup></li><li>Receive confirmation and disbursement</li></ol>You are also required to submit the following documents during the application process<sup>#</sup>:<ul><li>HKID Copy</li><li>Disbursement account proof (for the purposes of account verification, you can provide monthly bank statement)</li></ul>Additional documents may be requested<ul><li>Commission Based Salary: At least recent 3 months of Income Proof</li><li>Real Estate Industry: At least recent 6 months of Income Proof</li><li>Residential address proof</li></ul><div class=\"text-left text-size-small\"><sup>^</sup> Only refers to the time needed to calculate quotations after receipt of the applicant's TU Report. Applicants must fulfil specific requirements to be eligible, actual time may vary depending on each individual case.<br/><sup>#</sup> Income Proof and Address Proof waiver only available for loans with the maximum loan amount of HK$300,000 and for customers who fulfil specific credit requirements. WELEND LIMITED reserves the right to request further supporting documents for loan approval purposes in certain circumstances. Larger loan amounts may be offered to customers who provide supporting documents. HKID copy and disbursement account proof are required from all new customers for identity verification and loan disbursement purposes.</div></div>",
+      "how-to-monitor-status-question": "How to track my application status and records?",
+      "how-to-monitor-status-answer": "<div> To track your application status and records, simply login at <a href=\"https://member.welend.hk/en/users/sign_in\">https://member.welend.hk/en/users/sign_in</a></div>",
+      "annual-interest-rate-question": "Why can WeLend offer a lower effective rate than traditional lending businesses?",
+      "annual-interest-rate-answer": "<div> WeLend is a pure online operated money lending business, offering seamless money lending service with high cost efficiency. Meanwhile, brick-and-mortar banks and financial institutions suffer stress from maintaining retail operations, whereas WeLend can offer competitive interest rates and other benefits as WeLend does not need to allocate budget to run a retail business.</div>",
+      "low-interest-loan-question": "What fees does WeLend charge? Are there hidden fees?",
+      "low-interest-loan-answer": "<div> WeLend does not charge any application fees, guarantor fees, photocopy fees, introductory fees or any fees related. If there are any cancellation, declination or any loans granted, as long as the loans were not accepted, no fees will be charged. This also includes the time charge for loan negotiation or any fees related. WeLend does not hold any hidden fees with high transparency within all our terms. What you see is what you get.</div>"
+    },
+    "no-doc-loan-data": {
+      "who-is-eligible-question": "What are the application requirements for WeLend loan?",
+      "who-is-eligible-answer": "<div>All loan applicants must be a Hong Kong resident aged 18 years or above<sup>*</sup> and meet the following requirements:<ul><li>Stable employment: Minimum employment at current job of 3 months</li><li>Repayment Ability: Minimum monthly income of HK$8,000</li></ul>Submit the following documents during the application process:<ul><li>HKID Copy</li><li>Disbursement account proof (for the purposes of account verification, you can provide monthly bank statement)</li></ul>Additional documentation if necessary:<ul><li>Commission Based Salary: Minimum recent 3 months of Income Proof</li><li>Real Estate Industry: Minimum recent 6 months of Income Proof</li><li>Residential address proof</li></ul><div class=\"text-left text-size-small\"><sup>*</sup>if you are Chinese citizen, please may consider using Wolaidai, tailor made for mainland customers. For more details, please visit <a href=\"https://m.wolaidai.com\">https://m.wolaidai.com</a></div></div>",
+      "loan-amount-and-tenor-question": "How much can be borrowed? For how long?",
+      "loan-amount-and-tenor-answer": "<div> WeLend provides loan amounts from HK$5,000 to HK$1,500,000. Tailor made repayment schedule is available, ranging from 3 to 72 months. Maximum loan amount is determined by your financial background, including credit score, monthly income, occupation and financial situation.</div>",
+      "approval-process-question": "What is the Application Process?",
+      "approval-process-answer": "<div>Application process can be as simple as:<ol><li>Apply online</li><li>Finish mobile verification</li><li>Upload documents</li><li>Receive instant approval<sup>^</sup></li><li>Receive confirmation and disbursement</li></ol>You are also required to submit the following documents during the application process<sup>#</sup>:<ul><li>HKID Copy</li><li>Disbursement account proof (for the purposes of account verification, you can provide monthly bank statement)</li></ul>Additional documents may be requested<ul><li>Commission Based Salary: At least recent 3 months of Income Proof</li><li>Real Estate Industry: At least recent 6 months of Income Proof</li><li>Residential address proof</li></ul><div class=\"text-left text-size-small\"><sup>^</sup> Only refers to the time needed to calculate quotations after receipt of the applicant's TU Report. Applicants must fulfil specific requirements to be eligible, actual time may vary depending on each individual case.<br/><sup>#</sup> Income Proof and Address Proof waiver only available for loans with the maximum loan amount of HK$300,000 and for customers who fulfil specific credit requirements. WELEND LIMITED reserves the right to request further supporting documents for loan approval purposes in certain circumstances. Larger loan amounts may be offered to customers who provide supporting documents. HKID copy and disbursement account proof are required from all new customers for identity verification and loan disbursement purposes.</div></div>",
+      "how-to-monitor-status-question": "How to track my application status and records?",
+      "how-to-monitor-status-answer": "<div> To track your application status and records, simply login at <a href=\"https://member.welend.hk/en/users/sign_in\">https://member.welend.hk/en/users/sign_in</a></div>",
+      "annual-interest-rate-question": "Why can WeLend offer a lower effective rate than traditional lending businesses?",
+      "annual-interest-rate-answer": "<div> WeLend is a pure online operated money lending business, offering seamless money lending service with high cost efficiency. Meanwhile, brick-and-mortar banks and financial institutions suffer stress from maintaining retail operations, whereas WeLend can offer competitive interest rates and other benefits as WeLend does not need to allocate budget to run a retail business.</div>",
+      "quick-cash-loans-misunderstand-question": "What fees does WeLend charge? Are there hidden fees?",
+      "quick-cash-loans-misunderstand-answer": "<div> WeLend does not charge any application fees, guarantor fees, photocopy fees, introductory fees or any fees related. If there are any cancellation, declination or any loans granted, as long as the loans were not accepted, no fees will be charged. This also includes the time charge for loan negotiation or any fees related. WeLend does not hold any hidden fees with high transparency within all our terms. What you see is what you get.</div>"
+    },
+    "balance-transfer-data": {
+      "who-is-eligible-question": "What are the application requirements for WeLend loan?",
+      "who-is-eligible-answer": "<div>All loan applicants must be a Hong Kong resident aged 18 years or above<sup>*</sup> and meet the following requirements:<ul><li>Stable employment: Minimum employment at current job of 3 months</li><li>Repayment Ability: Minimum monthly income of HK$8,000</li></ul>Submit the following documents during the application process:<ul><li>HKID Copy</li><li>Disbursement account proof (for the purposes of account verification, you can provide monthly bank statement)</li></ul>Additional documentation if necessary:<ul><li>Commission Based Salary: Minimum recent 3 months of Income Proof</li><li>Real Estate Industry: Minimum recent 6 months of Income Proof</li><li>Residential address proof</li></ul><div class=\"text-left text-size-small\"><sup>*</sup>if you are Chinese citizen, please may consider using Wolaidai, tailor made for mainland customers. For more details, please visit <a href=\"https://m.wolaidai.com\">https://m.wolaidai.com</a></div></div>",
+      "loan-amount-and-tenor-question": "How much can be borrowed? For how long?",
+      "loan-amount-and-tenor-answer": "<div> WeLend provides loan amounts from HK$5,000 to HK$1,500,000. Tailor made repayment schedule is available, ranging from 3 to 72 months. Maximum loan amount is determined by your financial background, including credit score, monthly income, occupation and financial situation.</div>",
+      "approval-process-question": "What is the Application Process?",
+      "approval-process-answer": "<div>Application process can be as simple as:<ol><li>Apply online</li><li>Finish mobile verification</li><li>Upload documents</li><li>Receive instant approval<sup>^</sup></li><li>Receive confirmation and disbursement</li></ol>You are also required to submit the following documents during the application process<sup>#</sup>:<ul><li>HKID Copy</li><li>Disbursement account proof (for the purposes of account verification, you can provide monthly bank statement)</li></ul>Additional documents may be requested<ul><li>Commission Based Salary: At least recent 3 months of Income Proof</li><li>Real Estate Industry: At least recent 6 months of Income Proof</li><li>Residential address proof</li></ul><div class=\"text-left text-size-small\"><sup>^</sup> Only refers to the time needed to calculate quotations after receipt of the applicant's TU Report. Applicants must fulfil specific requirements to be eligible, actual time may vary depending on each individual case.<br/><sup>#</sup> Income Proof and Address Proof waiver only available for loans with the maximum loan amount of HK$300,000 and for customers who fulfil specific credit requirements. WELEND LIMITED reserves the right to request further supporting documents for loan approval purposes in certain circumstances. Larger loan amounts may be offered to customers who provide supporting documents. HKID copy and disbursement account proof are required from all new customers for identity verification and loan disbursement purposes.</div></div>",
+      "how-to-monitor-status-question": "How to track my application status and records?",
+      "how-to-monitor-status-answer": "<div> To track your application status and records, simply login at <a href=\"https://member.welend.hk/en/users/sign_in\">https://member.welend.hk/en/users/sign_in</a></div>",
+      "annual-interest-rate-question": "Why can WeLend offer a lower effective rate than traditional lending businesses?",
+      "annual-interest-rate-answer": "<div> WeLend is a pure online operated money lending business, offering seamless money lending service with high cost efficiency. Meanwhile, brick-and-mortar banks and financial institutions suffer stress from maintaining retail operations, whereas WeLend can offer competitive interest rates and other benefits as WeLend does not need to allocate budget to run a retail business.</div>",
+      "debt-solution-question": "What fees does WeLend charge? Are there hidden fees?",
+      "debt-solution-answer": "<div> WeLend does not charge any application fees, guarantor fees, photocopy fees, introductory fees or any fees related. If there are any cancellation, declination or any loans granted, as long as the loans were not accepted, no fees will be charged. This also includes the time charge for loan negotiation or any fees related. WeLend does not hold any hidden fees with high transparency within all our terms. What you see is what you get.</div>"
+    },
+    "property-owner-data": {
+      "who-is-eligible-question": "What are the application requirements for WeLend loan?",
+      "who-is-eligible-answer": "<div>All loan applicants must be a Hong Kong resident aged 18 years or above<sup>*</sup> and meet the following requirements:<ul><li>Stable employment: Minimum employment at current job of 3 months</li><li>Repayment Ability: Minimum monthly income of HK$8,000</li></ul>Submit the following documents during the application process:<ul><li>HKID Copy</li><li>Disbursement account proof (for the purposes of account verification, you can provide monthly bank statement)</li></ul>Additional documentation if necessary:<ul><li>Commission Based Salary: Minimum recent 3 months of Income Proof</li><li>Real Estate Industry: Minimum recent 6 months of Income Proof</li><li>Residential address proof</li></ul><div class=\"text-left text-size-small\"><sup>*</sup>if you are Chinese citizen, please may consider using Wolaidai, tailor made for mainland customers. For more details, please visit <a href=\"https://m.wolaidai.com\">https://m.wolaidai.com</a></div></div>",
+      "loan-amount-and-tenor-question": "How much can be borrowed? For how long?",
+      "loan-amount-and-tenor-answer": "<div> WeLend provides loan amounts from HK$5,000 to HK$1,500,000. Tailor made repayment schedule is available, ranging from 3 to 72 months. Maximum loan amount is determined by your financial background, including credit score, monthly income, occupation and financial situation.</div>",
+      "approval-process-question": "What is the Application Process?",
+      "approval-process-answer": "<div>Application process can be as simple as:<ol><li>Apply online</li><li>Finish mobile verification</li><li>Upload documents</li><li>Receive instant approval<sup>^</sup></li><li>Receive confirmation and disbursement</li></ol>You are also required to submit the following documents during the application process<sup>#</sup>:<ul><li>HKID Copy</li><li>Disbursement account proof (for the purposes of account verification, you can provide monthly bank statement)</li></ul>Additional documents may be requested<ul><li>Commission Based Salary: At least recent 3 months of Income Proof</li><li>Real Estate Industry: At least recent 6 months of Income Proof</li><li>Residential address proof</li></ul><div class=\"text-left text-size-small\"><sup>^</sup> Only refers to the time needed to calculate quotations after receipt of the applicant's TU Report. Applicants must fulfil specific requirements to be eligible, actual time may vary depending on each individual case.<br/><sup>#</sup> Income Proof and Address Proof waiver only available for loans with the maximum loan amount of HK$300,000 and for customers who fulfil specific credit requirements. WELEND LIMITED reserves the right to request further supporting documents for loan approval purposes in certain circumstances. Larger loan amounts may be offered to customers who provide supporting documents. HKID copy and disbursement account proof are required from all new customers for identity verification and loan disbursement purposes.</div></div>",
+      "how-to-monitor-status-question": "How to track my application status and records?",
+      "how-to-monitor-status-answer": "<div> To track your application status and records, simply login at <a href=\"https://member.welend.hk/en/users/sign_in\">https://member.welend.hk/en/users/sign_in</a></div>",
+      "annual-interest-rate-question": "Why can WeLend offer a lower effective rate than traditional lending businesses?",
+      "annual-interest-rate-answer": "<div> WeLend is a pure online operated money lending business, offering seamless money lending service with high cost efficiency. Meanwhile, brick-and-mortar banks and financial institutions suffer stress from maintaining retail operations, whereas WeLend can offer competitive interest rates and other benefits as WeLend does not need to allocate budget to run a retail business.</div>",
+      "cash-instalment-question": "What fees does WeLend charge? Are there hidden fees?",
+      "cash-instalment-answer": "<div> WeLend does not charge any application fees, guarantor fees, photocopy fees, introductory fees or any fees related. If there are any cancellation, declination or any loans granted, as long as the loans were not accepted, no fees will be charged. This also includes the time charge for loan negotiation or any fees related. WeLend does not hold any hidden fees with high transparency within all our terms. What you see is what you get.</div>"
+    }
+  },
+  "slider-text": {
+    "index": {
+      "google": {
+        "quote": "I needed cash urgently to pay for an unexpected family expense. WeLend’s personal loan application can be completed online and the approval result is received instantly. Once I uploaded my documents through WhatsApp, I received the cash in an hour! Convenient and quick!",
+        "content": "Mr. Cheung, a delivery driver, successfully received a loan for HK$100,000 @12-months tenor, 4.5% APR(Annual Percentage Rate), total repayment amount of HK$102,405"
+      },
+      "pol-google": {
+        "quote": "I always dreamed of attending cooking school but I did not have enough cash to pay the tuition fee. When I found WeLend No-Doc Loan with Income and Address Proof waiver, I was able to borrow a loan online easily and I received the cash I needed instantly.",
+        "content": "Miss Wong, a chef, successfully received a loan for HK$80,000 @12-months tenor, 4.8% APR(Annual Percentage Rate), total repayment amount of HK$82,405"
+      },
+      "b-google": {
+        "quote": "I have many credit cards with different payment deadlines. I used to only pay the minimum amount due because it was difficult to settle all the debts with high interest rates in one go. I applied for WeLend’s Card Debt Consolidation Loan online and cleared all my outstanding credit card debts with an interest-saving repayment plan. It’s great to consolidate and clear all my debts and improve my credit score!",
+        "content": "Mr. Lam, an engineer, successfully received a loan for HK$100,000 @12-months tenor, 4.5% APR(Annual Percentage Rate), total repayment amount of HK$102,405"
+      },
+      "c-google": {
+        "quote": "As a boutique shop owner, I hoped to expand my business by opening another outlet. A large amount of capital was needed to pay for rent, refurbishment and buying inventory. I applied for WeLend’s Property Owner Loan and received the approval for my $800k loan in just 30 minutes. I received the money on the same day so I could proceed with my plan on opening a new store quickly.",
+        "content": "Miss Lee, a boutique owner, successfully received a loan for HK$800,000 @36-months tenor, 15% APR(Annual Percentage Rate), total repayment amount of HK$985,126"
+      }
+    },
+    "personal-loan":{
+      "google": {
+        "quote": "I needed cash urgently to pay for an unexpected family expense. WeLend’s personal loan can be completed online and the approval result is received instantly. Once I uploaded my documents through WhatsApp, I received the cash in an hour! Convenient and quick!",
+        "content": "Mr. Cheung, a delivery driver, successfully received a loan for HK$100,000 @12-months tenor, 4.5% APR(Annual Percentage Rate), total repayment amount of HK$102,405"
+      },
+      "a-google": {
+        "quote":"I own a small business providing air-conditioner cleaning services. As my business grew, I wanted to invest in new machines so I could take more orders at the same time. As I don’t have any salary proof or related documents, most of the traditional banks rejected my loan application. When I applied for WeLend's Personal Loan online, my application was approved instantly. I even received my payment on the same day!",
+        "content": "Mr. Lai, self-employed, successfully received a loan for HK$120,000 @12-months tenor, 4.38% APR (Annual Percentage Rate), total repayment amount of HK$122,140"
+      },
+      "b-google": {
+        "quote":"I have a mortgage from buying an apartment a few years ago. Recently, I applied to traditional banks for another loan to pay for my wedding expenses but was either rejected or offered a high interest rate. WeLend has no branch and therefore can offer competitive interest rates. The application procedure was fully online and simple. The whole process was very user-friendly.",
+        "content": "Ms. Wong, a Barista, successfully received a loan for HK$220,000 @12-months tenor, 3.46% APR (Annual Percentage Rate), total repayment amount of HK$227,900 "
+      }
+    },
+    "no-doc-loan":{
+      "google": {
+        "quote": "I always dreamed of attending cooking school but I did not have enough cash to pay the tuition fee. When I found WeLend No-Doc Loan with Income and Address Proof waiver, I was able to borrow a loan online easily and I received the cash I needed instantly.",
+        "content": "Miss Wong, a chef, successfully received a loan for HK$80,000 @12-months tenor, 4.8% APR (Annual Percentage Rate), total repayment amount of HK$82,405 "
+      },
+      "a-google":{
+        "quote": "After quitting my job at a music store, I became a private piano teacher. I rented a space for the piano lessons but soon realised my rental expenses were higher than I expected. I applied for WeLend No-Doc Loan because I did not have any income proof and I successfully received cash within an hour.",
+        "content": "Miss Hu, piano teacher, successfully received a loan for HK$70,000 @12-months tenor, 10.02% APR (Annual Percentage Rate), total repayment amount of HK$73,787 "
+      },
+      "b-google":{
+        "quote": "To expand my toy business, I planned to purchase some limited edition model toys which cost around $80k. I did not have enough cash on hand and my loan application at traditional banks failed because I did not have income proof. WeLend No-Doc Loan does not require income and address proof and provided me with instant approval and disbursement!",
+        "content": "Mr. Cheng, toy shop owner, successfully received a loan for HK$80,000 @24-months tenor, 6.81% APR (Annual Percentage Rate), total repayment amount of HK$84,650 "
+      }
+    },
+    "balance-transfer":{
+      "google": {
+        "quote": "I have many credit cards with different payment deadlines. I used to pay the minimum amount due because it was difficult to settle all the debts with high interest rates in one go. I applied for WeLend’s Card Debt Consolidation Loan online and cleared all my outstanding credit card debts with an interest-saving repayment plan. It’s great to consolidate and clear all my debts and improve my credit score!",
+        "content": "Mr. Lam, an engineer, successfully received a loan for HK$100,000 @12-months tenor, 4.5% APR (Annual Percentage Rate), total repayment amount of HK$102,405 "
+      },
+      "a-google": {
+        "quote": "I used my credit card to pay for my tax and year-end festive sale. I had $80k of credit card debt and was not able to repay them. WeLend's card debt consolidation loan solved my financial burden and helped me improve my credit score!",
+        "content": "Ms Wong, an sales person, successfully received a loan for HK$80,000 @24-months tenor, 8.12% APR (Annual Percentage Rate), total repayment amount of HK$85,741 "
+      },
+      "b-google": {
+        "quote": "I spent money on fancy meals and luxury goods and had several credit card debts. I was shocked when I realised my credit card debt was over $500k. I applied for WeLend's Card Debt Consolidation Loan to clear all the outstanding debts and minimize the interest payments!",
+        "content": "Ms. Suen, a  real estate agent, successfully received a loan for HK$500,000 @48-months tenor, 5.69% APR (Annual Percentage Rate), total repayment amount of HK$545,512 "
+      }
+    },
+    "property-owner-loan":{
+      "google": {
+        "quote": "As a boutique shop owner, I hoped to expand my business by opening another outlet. A large amount of capital was needed to pay for rent, refurbishment and buying inventory. I applied for WeLend’s Property Owner Loan and received the approval for my $800k loan in just 30 minutes. I received the money on the same day so I could proceed with my plan on opening a new store quickly!",
+        "content": "Miss Lee, a boutique owner, successfully received a loan for HK$800,000 @36-months tenor, 15% APR (Annual Percentage Rate), total repayment amount of HK$985,126 "
+      },
+      "a-google": {
+        "quote": "My family wanted to renovate our home and required around $650k for the renovation works. After comparing a few moneylenders, we decided to go for WeLend's Property Owner Loan because we needed a larger loan amount. Property deeds and Land Registry registration were not required, so we could avoid complicated legal procedures and extra expenses!",
+        "content": "Mr Lin, a teacher, successfully received a loan for HK$650,000 @36-months tenor, 3.18% APR (Annual Percentage Rate), total repayment amount of HK$681,807 "
+      },
+      "b-google": {
+        "quote": "I wanted to purchase a parking space for investment purposes. Although I purchased a property before, I did not want to have a second mortgage. WeLend's Property Owner Loan fulfilled my needs by offering a larger loan amount with no legal fees or second mortgage required. I received an instant approval result and disbursement shortly afterwards.",
+        "content": "Ms Lam, a secretary , successfully received a loan for HK$800,000 @12-months tenor, 1.88% APR(Annual Percentage Rate), total repayment amount of HK$808,115 "
+      }
+    }
+  },
+  "remark-text": {
+    "personal-loan": "Interest rates may vary depending on the customer’s financial position and repayment record. The maximum annual percentage rate is 60.00%.\nThe repayment period is typically between 3 months to 72 months. WELEND LIMITED reserves its absolute right on the final loan decision"
+  },
+  "login-modal": {
+    "title": "Apply / Login",
+    "mobile": "Mobile number",
+    "email": "Email",
+    "apply-btn": "Apply",
+    "statement": "By applying, I confirm that I have read and agree to WeLend's <a href='/en/important-notice' target='_blank'>Important Notice and Privacy Policy</a> and <a href='/en/privacy-policy' target='_blank'>Personal Information Collection Statement</a>. I also agree to receive messages related to approval of loan applications via phone, SMS, email, and WhatsApp or other instant messaging platforms from WeLend.",
+    "tips-title": "Application tips💡:",
+    "tips-content": "<div>Please prepare the following for your application (*if required)</div><ul><li>Hong Kong ID card</li><li>Bank account proof (statement or ATM card)</li><li>Income proof (example: bank statement or payslip) *</li><li>Address proof (example: utility bill) *</li></ul>",
+    "loan-type": "Loan Type"
+  },
+  "tracker-modal": {
+    "title": "Track your application",
+    "description": "Please enter your mobile number and applications' original loan amount to check the status of your application",
+    "mobile": "Mobile",
+    "amount": "Loan Amount",
+    "check": "Check",
+    "results": {
+      "incomplete": "Incomplete loan application",
+      "applied": "Application received",
+      "tu_data_updated": "Please upload documents for further loan processing",
+      "aip": "Approved in principle",
+      "pending_doc_upload": "Documents required for further loan processing",
+      "doc_uploaded": "Document(s) received",
+      "doc_verified": "Document(s) verified",
+      "approved": "Your loan is approved!",
+      "agreement_signed": "Your loan will be disbursed soon",
+      "disbursed": "Your loan has been disbursed",
+      "rejected": "Your loan application has been cancelled",
+      "cancelled": "Your loan application has been cancelled",
+      "complete_application": "請填寫申請表上未完成部份",
+      "upload_doc": "Please complete your loan application",
+      "sign_agreement": "Please upload documents now",
+      "confirm_received_agreement": "Please confirm your loan agreement",
+      "perform_iv_with_kba": "Please complete identity verification",
+      "perform_iv": "Please complete identity verification",
+      "complete_application_action": "Complete application",
+      "upload_doc_action": "Upload documents",
+      "sign_agreement_action": "Sign agreement",
+      "confirm_received_agreement_action": "Confirm agreement",
+      "perform_iv_with_kba_action": "Verify ID",
+      "perform_iv_action": "Verify ID"
+    }
+  },
+  "meta-data": {
+    "title": {
+      "default": "WeLend - at your service anytime, all the time",
+      "personal-loan": "WeLend - Personal Loan at your service anytime, all the time",
+      "no-doc-loan": "WeLend - No Document Loan",
+      "balance-transfer": "WeLend - Balance Transfer and A.I. Card Debt Consolidation Loan",
+      "card-debt-tips": "WeLend - Card Debt Tips",
+      "about-us": "WeLend - About Us",
+      "contact-us": "WeLend - Contact Us",
+      "payment-methods": "WeLend - Payment Methods",
+      "quotes": "WeLend - Quotes",
+      "important-notice": "WeLend - Important Notice",
+      "money-lenders-ordinance": "WeLend - Money Lenders Ordinance",
+      "privacy-policy": "WeLend - Privacy Policy and Personal Information Collection Statement",
+      "faqs": "WeLend - FAQs",
+      "customer-declaration": "WeLend - Custom Declaration",
+      "declaration-cashloan": "WeLend - Declaration",
+      "terms-and-conditions": "WeLend - Terms and Conditions"
+    },
+    "description": {
+      "default": "WeLend - at your service anytime, all the time",
+      "personal-loan": "Real time credit assessment using A.I. technology and big data analysis can calculate your real loan rate in seconds, anytime, anywhere.",
+      "balance-transfer": "WeLend’s A.I. Card Debt Master analyses your credit profile automatically, calculates the best interest-saving repayment plan and helps you to resolve any remaining unsettled debt across different phases instantly. Clear all your debt and revitalise your credit score now!",
+      "no-doc-loan": "Get an instant approval and instant cash without income and address proof",
+      "about-us": "About the company that is making lending faster, cheaper, and easier",
+      "card-debt-tips": "Interest expenses from card debts not only roll into to larger and larger amounts, but will also affect your credit score!"
+    }
+  },
+  "form-field-error": {
+    "mobile": {
+      "required": "Sorry! Please fill in your mobile number.",
+      "format": "Sorry! Your mobile number is incorrect.",
+      "phone": "Sorry! Your mobile number is incorrect."
+    },
+    "email": {
+      "required": "Sorry! Please fill in your email address.",
+      "format": "Sorry! The email address provided is incorrect."
+    },
+    "amount": {
+      "required": "Sorry! Please fill in your loan amount.",
+      "number": "Sorry! The loan amount provided is incorrect.",
+      "min": "Sorry! The loan amount provided is incorrect.",
+      "max": "Sorry! The loan amount provided is incorrect."
+    },
+    "notification-error": {
+      "tracker-not-found": "Application not found",
+      "session-timeout": "Sorry your session has timeout, please login again"
+    }
+  },
+  "utm-source": {
+    "google": {
+      "quote": "I needed cash urgently to pay for an unexpected family expense. WeLend’s personal loan application can be completed online and the approval result is received instantly. Once I uploaded my documents through WhatsApp, I received the cash in an hour! Convenient and quick!",
+      "content": "Mr. Cheung, a delivery driver, successfully received a loan for HK$100,000 @12-months tenor, 4.5% APR(Annual Percentage Rate), total repayment amount of HK$102,405",
+      "remark": "Interest rates may vary depending on the customer’s financial position and repayment record. The maximum annual percentage rate is 60.00%.<br/>The repayment period is typically between 3 months to 72 months. WELEND LIMITED reserves its absolute right on the final loan decision."
+    },
+    "pol-google": {
+      "quote": "Miss Lee, boutique owner hopes to expand her business by opening another outlet, in need of liquid asset for lease, refurbishment and inventory. She applied WeLend’s Property Owner Loan, received swift approval on her HK$800,000 loan in just 30 minutes. Disbursements received on the same day, achieved her goal in establishing another outlet.",
+      "content": "Miss Lee, a boutique owner, successfully received a loan for HK$800,000 @36-months tenor, 15% APR(Annual Percentage Rate), total repayment amount of HK$985,126 ",
+      "remark": "Interest rates may vary depending on the property valuation, customer’s financial position and repayment record. The maximum annual percentage rate is 25.00%.<br/>The repayment period is a minimum of 6 months and a maximum of 84 months. WELEND LIMITED reserves its absolute right on the final loan decision.",
+      "page-tnc": "Interest rates may vary depending on the property valuation, customer’s financial position and repayment record. The maximum annual percentage rate is 25.00%. The repayment period is a minimum of 6 months and a maximum of 84 months."
+    },
+    "bt-google": {
+      "quote": "I have many credit cards with different payment deadlines. I used to only pay the minimum amount due because it was difficult to settle all the debts with high interest rates in one go. I applied for WeLend’s Card Debt Consolidation Loan online and cleared all my outstanding credit card debts with the best interest-saving repayment plan. It’s great to consolidate and clear all my debts and improve my credit score!",
+      "content": "Mr. Lam, an engineer, successfully received a loan for HK$100,000 @12-months tenor, 4.5% APR(Annual Percentage Rate), total repayment amount of HK$102,405",
+      "remark": "Interest rates may vary depending on the customer’s financial position and repayment record. The maximum annual percentage rate is 60.00%.<br/>The repayment period is typically between 3 months to 72 months. WELEND LIMITED reserves its absolute right on the final loan decision"
+    },
+    "no-doc-google": {
+      "quote": "It is always been my dream to attend a cooking school to improve my cooking skills, I need cash to pay my tuition fee. Until I found WeLend No-Doc Loan, that waived my Income and Address Proof, it allows me to borrow online easily, and receive cash instantly.",
+      "content": "Miss Wong, a chef, successfully received a loan for HK$80,000 @12-months tenor, 4.8% APR(Annual Percentage Rate), total repayment amount of HK$82,405",
+      "remark": "Interest rates may vary depending on the customer’s financial position and repayment record. The maximum annual percentage rate is 60.00%.<br/>The repayment period is typically between 3 months to 72 months. WELEND LIMITED reserves its absolute right on the final loan decision"
+    }
+  },
+  "tnc-button": "Terms & conditions, Click here",
+  "important-notice": "Important notice",
+  "fraud-warning":"fix",
+  "fraud-alert": "WELEND received reports of bogus calls or messages from senders claiming to be from WELEND and attempting to refer loan applications to illegally obtain personal information and/or defraud customers by requesting pre-payments. If you suspect you have received a fraudulent message or call or documents from a non-official WELEND channel, please do not disclose your personal information and/or do not make any pre-payments. Please call our customer service hotline: 35906396 or via our official WhatsApp No. : 3706 9120 immediately to verify the message. You may also report the suspected fraudulent activity to the police. Money Lender’s License: 0970/2021. Warning: You have to repay your loans. Don’t pay any intermediaries."
+}

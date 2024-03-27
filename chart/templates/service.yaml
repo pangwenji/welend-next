@@ -1,0 +1,31 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: {{ include "welend-site3.fullname" . }}
+  labels:
+    {{- include "welend-site3.labels" . | nindent 4 }}
+spec:
+  type: {{ .Values.service.type }}
+  ports:
+    - port: {{ .Values.service.port }}
+      targetPort: http
+      protocol: TCP
+      name: {{ include "welend-site3.fullname" . }}-port
+  selector:
+    {{- include "welend-site3.selectorLabels" . | nindent 4 }}
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: {{ include "welend-site3.fullname" . }}-wl7615
+  labels:
+    {{- include "welend-site3.labels" . | nindent 4 }}-wl7615
+spec:
+  type: {{ .Values.service.type }}
+  ports:
+    - port: {{ .Values.service.port }}
+      targetPort: 80
+      protocol: TCP
+      name: {{ include "welend-site3.fullname" . }}-wl7615-port
+  selector:
+    {{- include "welend-site3.selectorLabels" . | nindent 4 }}-wl7615

@@ -1,0 +1,63 @@
+replicaCount: 2
+
+secretName: welend-site3-secret
+env:
+  normal:
+    NODE_ENV: staging
+    PORT: 8888
+    API_HOST: https://member.welend-staging.com
+    APPLICATION_FORM_BASE: https://app.welend-staging.com
+    SITE_URL: https://www.welend-staging.com
+    AHOY_URL: //pepsi.welend-staging.com
+    AHOY_COOKIE_DOMAIN: welend-staging.com
+    CAMPAIGN_VIDEO_LINK: yl27InbB7ks
+    FB_APP_ID: 1597390477163924
+    SAKE_URL: https://member.welend-staging.com
+    STATIC_API_HOST: https://www.welend-staging.com
+    BUGSNAG_PUBLIC_PATH: https://www.welend-staging.com
+    MONEY_LENDER_LICENSE: 0970 / 2021
+    CAMPAIGN_VIDEO_LINK2: M92xrsP1bus
+    WELAB_BANK_URL: https://welab.bank
+    NOTICE_TYPE: Relocation2020
+    NOTICE_START_TIME: 2020-04-20T00:00:00+08:00
+    NOTICE_END_TIME: 2020-05-31T23:59:00+08:00
+  secret:
+    API_CLIENT_ID: data_from_vault
+    API_CLIENT_SECRET: data_from_vault
+    BOTFRAMEWORK_SECRET: data_from_vault
+    BUGSNAG_KEY: data_from_vault
+    EXTERNAL_PASSWORD: data_from_vault
+    EXTERNAL_USERNAME: data_from_vault
+    GTM: data_from_vault
+    WELEND_PASSWORD: data_from_vault
+    WELEND_USERNAME: data_from_vault
+  wl7615:
+    default.conf: |
+      server {    listen       80;    server_name  localhost;    location / {        root   /usr/share/nginx/html;        index  index.html index.htm;    }    location ^~ /aiblog/ {        proxy_set_header X-Real-IP $remote_addr;        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;        proxy_set_header X-NginX-Proxy true;        proxy_pass https://54.151.254.137/;        proxy_ssl_verify off; proxy_ssl_session_reuse off;        proxy_set_header Host aiblog.welend.hk;        proxy_cache_bypass $http_upgrade;        proxy_redirect off;    }    location /internal/ping {        return 200 'OK';    }   }server {    listen       80;    server_name  welend-site3-aiblog.prod.welend.local welend-site3-aiblog.sta.welend.local welend-site3-aiblog.dev.welend.local;    location ^~ /aiblog/ {        proxy_set_header X-Real-IP $remote_addr;        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;        proxy_set_header X-NginX-Proxy true;        proxy_pass https://54.151.254.137/;        proxy_ssl_verify off; proxy_ssl_session_reuse off;        proxy_set_header Host aiblog.welend.hk;        proxy_cache_bypass $http_upgrade;        proxy_redirect off;    } location /internal/ping {        return 200 'OK';    }      location / {        return 301 https://www.welend.hk/aiblog$request_uri;    }}
+
+image:
+  pullPolicy: Always
+
+serviceAccount:
+  create: false
+
+ingress:
+  enabled: true
+  annotations:
+    kubernetes.io/ingress.class: kong
+  hosts:
+    - host: welend-site3.sta.welend.local
+      paths:
+        - path: /aiblog
+          service: welend-site3-wl7615
+        - path: /
+          service: welend-site3
+    - host: welend-site3-aiblog.sta.welend.local
+      paths:
+        - path: /
+          service : welend-site3-wl7615
+  tls:
+    - hosts:
+        - welend-site3.sta.welend.local
+        - welend-site3-aiblog.sta.welend.local
+      secretName: welend-site3-tls-secret-20230427

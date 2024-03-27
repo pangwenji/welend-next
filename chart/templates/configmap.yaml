@@ -1,0 +1,21 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: {{ include "welend-site3.fullname" . }}-configmap
+  labels:
+    {{- include "welend-site3.labels" . | nindent 4 }}
+data:
+  {{- range $key, $val := .Values.env.normal }}
+  {{ $key }}: {{ $val | quote }}
+  {{- end}}
+---
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: {{ include "welend-site3.fullname" . }}-wl7615-configmap
+  labels:
+    {{- include "welend-site3.labels" . | nindent 4 }}-wl7615-configmap
+data:
+  {{- range $key, $val := .Values.env.wl7615 }}
+  {{ $key }}: {{ $val | quote }}
+  {{- end}}

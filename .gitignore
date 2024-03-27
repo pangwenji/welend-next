@@ -1,0 +1,25 @@
+# See https://help.github.com/ignore-files/ for more about ignoring files.
+
+# build
+/.next
+/.cache
+
+# dependencies
+/node_modules
+
+# editors
+/.idea
+
+# misc
+.DS_Store
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# local
+.env
+coverage/
+
+*.missing.json
+
+package-lock.json

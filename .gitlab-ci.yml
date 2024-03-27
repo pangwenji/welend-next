@@ -1,0 +1,195 @@
+stages:
+  - test
+  - scan
+  - build
+  - deploy
+
+image: $AWS_ECR_REGISTRY/wl-docker:latest
+services:
+  - docker:19.03.15-dind
+
+variables:
+  WL_HELM_DIR: ./chart
+  WL_HELM_DEV_VALUES: values.dev.yaml
+  WL_HELM_STA_VALUES: values.sta.yaml
+  WL_HELM_PROD_VALUES: values.prod.yaml
+  WL_IMAGE_NAME: $CI_PROJECT_NAME
+  WL_PIPELINE_NAMESPACE: $CI_PROJECT_NAME
+
+cache: &global_cache
+  key: ${CI_COMMIT_REF_SLUG}
+  paths:
+    - node_modules/
+
+.deploy_script: &deploy_script
+  script:
+    - aws eks update-kubeconfig --region $AWS_DEFAULT_REGION --name $AWS_EKS_CLUSTER_NAME
+    - kubectl create namespace $WL_PIPELINE_NAMESPACE --dry-run=client -o yaml | kubectl apply -f -
+    - export VAULT_CACERT=$CI_PROJECT_DIR.tmp/CI_SERVER_TLS_CA_FILE
+    - export VAULT_TOKEN="$(vault write -field=token auth/$VAULT_JWT_AUTH/login role=$VAULT_AUTH_ROLE jwt=$CI_JOB_JWT)"
+    - export API_CLIENT_ID="$(vault kv get -field=API_CLIENT_ID $VAULT_ENGINE_NAME/$WL_PIPELINE_NAMESPACE)"
+    - export API_CLIENT_SECRET="$(vault kv get -field=API_CLIENT_SECRET $VAULT_ENGINE_NAME/$WL_PIPELINE_NAMESPACE)"
+    - export BOTFRAMEWORK_SECRET="$(vault kv get -field=BOTFRAMEWORK_SECRET $VAULT_ENGINE_NAME/$WL_PIPELINE_NAMESPACE)"
+    - export BUGSNAG_KEY="$(vault kv get -field=BUGSNAG_KEY $VAULT_ENGINE_NAME/$WL_PIPELINE_NAMESPACE)"
+    - export EXTERNAL_PASSWORD="$(vault kv get -field=EXTERNAL_PASSWORD $VAULT_ENGINE_NAME/$WL_PIPELINE_NAMESPACE)"
+    - export EXTERNAL_USERNAME="$(vault kv get -field=EXTERNAL_USERNAME $VAULT_ENGINE_NAME/$WL_PIPELINE_NAMESPACE)"
+    - export GTM="$(vault kv get -field=GTM $VAULT_ENGINE_NAME/$WL_PIPELINE_NAMESPACE)"
+    - export WELEND_PASSWORD="$(vault kv get -field=WELEND_PASSWORD $VAULT_ENGINE_NAME/$WL_PIPELINE_NAMESPACE)"
+    - export WELEND_USERNAME="$(vault kv get -field=WELEND_USERNAME $VAULT_ENGINE_NAME/$WL_PIPELINE_NAMESPACE)"
+    - cd $WL_HELM_DIR
+    - helm upgrade --install --namespace $WL_PIPELINE_NAMESPACE $WL_PIPELINE_NAMESPACE ./
+      --values $WL_HELM_VALUES
+      --set image.repository=$AWS_ECR_REGISTRY/$WL_IMAGE_NAME
+      --set image.tag=$CI_COMMIT_SHORT_SHA
+      --set env.secret.API_CLIENT_ID=$API_CLIENT_ID
+      --set env.secret.API_CLIENT_SECRET=$API_CLIENT_SECRET
+      --set env.secret.BOTFRAMEWORK_SECRET=$BOTFRAMEWORK_SECRET
+      --set env.secret.BUGSNAG_KEY=$BUGSNAG_KEY
+      --set env.secret.EXTERNAL_PASSWORD=$EXTERNAL_PASSWORD
+      --set env.secret.EXTERNAL_USERNAME=$EXTERNAL_USERNAME
+      --set env.secret.GTM=$GTM
+      --set env.secret.WELEND_PASSWORD=$WELEND_PASSWORD
+      --set env.secret.WELEND_USERNAME=$WELEND_USERNAME
+
+.clear_cache_script: &clear_cache_script
+  after_script:
+    - |-
+      PAYLOAD=$(cat << JSON
+      {
+        "purge_everything":true
+      }
+      JSON
+      )
+    - echo "$PAYLOAD"
+    - >
+      curl --request POST "https://api.cloudflare.com/client/v4/zones/$CLOUDFLARE_ZONE_ID/purge_cache"
+      --header "Authorization: Bearer $CLOUDFLARE_CACHE_PURGE_TOKEN"
+      --header "Content-Type: application/json"
+      --data-binary "${PAYLOAD}"
+
+test:
+  stage: test
+  script:
+    - docker build --target test -t run-test-in-docker -f Dockerfile .
+  rules:
+    - if: '$CI_PIPELINE_SOURCE == "merge_request_event"'
+
+build:
+  stage: build
+  cache:
+    <<: *global_cache
+  script:
+    - aws ecr get-login-password --region $AWS_DEFAULT_REGION | docker login --username AWS --password-stdin $AWS_ECR_REGISTRY
+    - docker build --build-arg ENV=development --target runner -t $AWS_ECR_REGISTRY/$WL_IMAGE_NAME:$CI_COMMIT_SHORT_SHA -f Dockerfile .
+    - docker push $AWS_ECR_REGISTRY/$WL_IMAGE_NAME:$CI_COMMIT_SHORT_SHA
+  variables:
+    AWS_ACCESS_KEY_ID: $SS_AWS_ACCESS_KEY_ID
+    AWS_SECRET_ACCESS_KEY: $SS_AWS_SECRET_ACCESS_KEY
+  rules:
+    - if: '$CI_COMMIT_BRANCH == "develop" || $CI_COMMIT_BRANCH == "master" || $CI_COMMIT_BRANCH =~ /^feature\/epic\/[\w-]*/ || $CI_COMMIT_BRANCH =~ /^release\/[\w-]*/'
+
+dev-deploy:
+  stage: deploy
+  cache: {}
+  <<: *deploy_script
+  <<: *clear_cache_script
+  variables:
+    AWS_ACCESS_KEY_ID: $DEV_AWS_ACCESS_KEY_ID
+    AWS_SECRET_ACCESS_KEY: $DEV_AWS_SECRET_ACCESS_KEY
+    AWS_EKS_CLUSTER_NAME: $AWS_DEV_EKS_CLUSTER_NAME
+    VAULT_ADDR: $VAULT_SSSTA_ADDR
+    VAULT_JWT_AUTH: $VAULT_SS_GITLAB_JWT_AUTH
+    VAULT_AUTH_ROLE: $VAULT_DEV_AUTH_ROLE
+    VAULT_ENGINE_NAME: $VAULT_DEV_ENGINE_NAME
+    WL_HELM_VALUES: $WL_HELM_DEV_VALUES
+    CLOUDFLARE_ZONE_ID: $CLOUDFLARE_ZONE_ID_DEV
+    CLOUDFLARE_CACHE_PURGE_TOKEN: $CLOUDFLARE_CACHE_PURGE_TOKEN_DEV
+  environment:
+    name: Development
+    url: $DEV_ENV_URL
+  rules:
+    - if: '$CI_COMMIT_BRANCH == "develop"'
+
+sta-deploy:
+  stage: deploy
+  cache: {}
+  <<: *deploy_script
+  <<: *clear_cache_script
+  variables:
+    AWS_ACCESS_KEY_ID: $STA_AWS_ACCESS_KEY_ID
+    AWS_SECRET_ACCESS_KEY: $STA_AWS_SECRET_ACCESS_KEY
+    AWS_EKS_CLUSTER_NAME: $AWS_STA_EKS_CLUSTER_NAME
+    VAULT_ADDR: $VAULT_SSSTA_ADDR
+    VAULT_JWT_AUTH: $VAULT_SS_GITLAB_JWT_AUTH
+    VAULT_AUTH_ROLE: $VAULT_STA_AUTH_ROLE
+    VAULT_ENGINE_NAME: $VAULT_STA_ENGINE_NAME
+    WL_HELM_VALUES: $WL_HELM_STA_VALUES
+    CLOUDFLARE_ZONE_ID: $CLOUDFLARE_ZONE_ID_STA
+    CLOUDFLARE_CACHE_PURGE_TOKEN: $CLOUDFLARE_CACHE_PURGE_TOKEN_STA
+  environment:
+    name: Staging
+    url: $STA_ENV_URL
+  rules:
+    - if: '$CI_COMMIT_BRANCH == "master" || $CI_COMMIT_BRANCH =~ /^feature\/epic\/[\w-]*/ || $CI_COMMIT_BRANCH =~ /^release\/[\w-]*/'
+      when: manual
+
+prod-deploy:
+  stage: deploy
+  cache: {}
+  script:
+    - aws eks update-kubeconfig --region $AWS_DEFAULT_REGION --name $AWS_EKS_CLUSTER_NAME
+    - kubectl create namespace $WL_PIPELINE_NAMESPACE --dry-run=client -o yaml | kubectl apply -f -
+    - export VAULT_CACERT=$CI_PROJECT_DIR.tmp/CI_SERVER_TLS_CA_FILE
+    - export VAULT_TOKEN="$(vault write -field=token auth/$VAULT_JWT_AUTH/login role=$VAULT_AUTH_ROLE jwt=$CI_JOB_JWT)"
+    - export API_CLIENT_ID="$(vault kv get -field=API_CLIENT_ID $VAULT_ENGINE_NAME/$WL_PIPELINE_NAMESPACE)"
+    - export API_CLIENT_SECRET="$(vault kv get -field=API_CLIENT_SECRET $VAULT_ENGINE_NAME/$WL_PIPELINE_NAMESPACE)"
+    - export BOTFRAMEWORK_SECRET="$(vault kv get -field=BOTFRAMEWORK_SECRET $VAULT_ENGINE_NAME/$WL_PIPELINE_NAMESPACE)"
+    - export BUGSNAG_KEY="$(vault kv get -field=BUGSNAG_KEY $VAULT_ENGINE_NAME/$WL_PIPELINE_NAMESPACE)"
+    - export GTM="$(vault kv get -field=GTM $VAULT_ENGINE_NAME/$WL_PIPELINE_NAMESPACE)"
+    - cd $WL_HELM_DIR
+    - helm upgrade --install --namespace $WL_PIPELINE_NAMESPACE $WL_PIPELINE_NAMESPACE ./
+      --values $WL_HELM_VALUES
+      --set image.repository=$AWS_ECR_REGISTRY/$WL_IMAGE_NAME
+      --set image.tag=$CI_COMMIT_SHORT_SHA
+      --set env.secret.API_CLIENT_ID=$API_CLIENT_ID
+      --set env.secret.API_CLIENT_SECRET=$API_CLIENT_SECRET
+      --set env.secret.BOTFRAMEWORK_SECRET=$BOTFRAMEWORK_SECRET
+      --set env.secret.BUGSNAG_KEY=$BUGSNAG_KEY
+      --set env.secret.GTM=$GTM
+  <<: *clear_cache_script
+  variables:
+    AWS_ACCESS_KEY_ID: $PROD_AWS_ACCESS_KEY_ID
+    AWS_SECRET_ACCESS_KEY: $PROD_AWS_SECRET_ACCESS_KEY
+    AWS_EKS_CLUSTER_NAME: $AWS_PROD_EKS_CLUSTER_NAME
+    VAULT_ADDR: $VAULT_SS_ADDR
+    VAULT_JWT_AUTH: $VAULT_SS_GITLAB_JWT_AUTH
+    VAULT_AUTH_ROLE: $VAULT_PROD_AUTH_ROLE
+    VAULT_ENGINE_NAME: $VAULT_PROD_ENGINE_NAME
+    WL_HELM_VALUES: $WL_HELM_PROD_VALUES
+    CLOUDFLARE_ZONE_ID: $CLOUDFLARE_ZONE_ID_PROD
+    CLOUDFLARE_CACHE_PURGE_TOKEN: $CLOUDFLARE_CACHE_PURGE_TOKEN_PROD
+  environment:
+    name: Production
+    url: $PROD_ENV_URL
+  rules:
+    - if: '$CI_COMMIT_BRANCH == "master"'
+      when: manual
+
+code-scan:
+  stage: scan
+  cache: {}
+  image:
+    name: 303523360190.dkr.ecr.ap-east-1.amazonaws.com/eks-backup:sonar-scanner-cli-v4.5
+    entrypoint: [""]
+  script:
+    - keytool -importcert -noprompt -trustcacerts
+      -keystore /opt/java/openjdk/lib/security/cacerts
+      -storepass changeit
+      -alias welendCA
+      -file $CI_PROJECT_DIR.tmp/CI_SERVER_TLS_CA_FILE
+    - sonar-scanner -Dsonar.qualitygate.wait=true
+  variables:
+    SONAR_USER_HOME: "${CI_PROJECT_DIR}/.sonar"
+    GIT_DEPTH: 0
+  rules:
+    - if: '$CI_PIPELINE_SOURCE == "merge_request_event"'

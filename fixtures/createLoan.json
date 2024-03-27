@@ -1,0 +1,101 @@
+{
+    "user_id": 83,
+    "state": "incomplete",
+    "amount": 5000,
+    "tenor": 720,
+    "purpose_description": null,
+    "residential_phone": null,
+    "work_phone": null,
+    "application_id": "10336469",
+    "dependents_count": 0,
+    "business_nature": 0,
+    "position": null,
+    "year_of_service": null,
+    "residential_status": 0,
+    "residential_repayment": null,
+    "disbursement_bank": 0,
+    "disbursement_account": null,
+    "monthly_income": null,
+    "name_of_employer": null,
+    "self_employed": false,
+    "declaration_option": false,
+    "residential_address": null,
+    "work_address": null,
+    "bankrupted": null,
+    "purpose": null,
+    "use_as_bank_statements": false,
+    "use_as_residential_proofs": false,
+    "product_code": "personal_installment_loan",
+    "preferred_contact_time": 0,
+    "aip_type": null,
+    "send_documents_in_other_channels": false,
+    "salary_method": null,
+    "channel": "mobile_app",
+    "object_to_receive_newsletter": null,
+    "apr": null,
+    "monthly_flat_rate": null,
+    "is_pre_approved_loan?": false,
+    "user": {
+        "email": "",
+        "language": "tc",
+        "mobile": "28493209",
+        "profile": {
+            "english_first_name": null,
+            "english_last_name": null,
+            "gender": null,
+            "hkid": null,
+            "birthday": null
+        },
+        "education_profile": {
+            "education_level": null
+        }
+    },
+    "documents": [
+        {
+            "required": true,
+            "completed": false,
+            "doc_type": "hkid_proof",
+            "images": []
+        },
+        {
+            "required": true,
+            "completed": false,
+            "doc_type": "income_proof",
+            "images": []
+        },
+        {
+            "required": true,
+            "completed": false,
+            "doc_type": "residential_proof",
+            "images": []
+        },
+        {
+            "required": true,
+            "completed": false,
+            "doc_type": "facial_proof",
+            "images": []
+        },
+        {
+            "required": true,
+            "completed": false,
+            "doc_type": "disbursement_account_proof",
+            "images": []
+        }
+    ],
+    "created_at": "2018-04-03T11:43:09.000+08:00",
+    "applied_at": null,
+    "repeating": false,
+    "last_applied_at": null,
+    "identify_verification": {
+        "kba_completed": false,
+        "facial_proof_uploaded": false,
+        "iv_completed": false
+    },
+    "total_refinance_amount": 0,
+    "refinances": [],
+    "next_action": "complete_application",
+    "history": [],
+    "bt_and_cash": {
+        "amount": 5000
+    }
+}

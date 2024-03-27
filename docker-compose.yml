@@ -1,0 +1,16 @@
+version: '3.9'
+
+services:
+  web:
+    container_name: welend-site-3
+    build:
+      context: .
+      dockerfile: Dockerfile.dev
+    command: sh -c "yarn && yarn dev"
+    working_dir: /app
+    env_file:
+      - .env
+    ports:
+      - 8888:8888
+    volumes:
+      - .:/app
